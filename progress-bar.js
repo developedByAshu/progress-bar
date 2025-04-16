@@ -10,9 +10,11 @@ const progressBar = (progress) => {
   const filled = Math.round((percent / 100) * width);
   const bar = '█'.repeat(filled) + '-'.repeat(width - filled);
 
+  /* eslint-disable no-console */
   console.log(`\n${'═'.repeat(60)}`);
   console.log('🚀 Progress Update'.padStart(35));
   console.log(`${'═'.repeat(60)}`);
   console.log(`| ${bar} | ${percent}%`);
   console.log(`${'═'.repeat(60)}`);
+  /* eslint-enable no-console */
 };
