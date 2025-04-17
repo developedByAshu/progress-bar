@@ -16,5 +16,4 @@ const progressBar = (progress) => {
   console.log(`${'═'.repeat(60)}`);
   console.log(`| ${bar} | ${percent}%`);
   console.log(`${'═'.repeat(60)}`);
-  /* eslint-enable no-console */
 };
